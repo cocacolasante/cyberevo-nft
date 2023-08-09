@@ -18,6 +18,7 @@ contract CyberEvo is ERC721URIStorage{
     constructor(string memory _ipfsHash) ERC721("CyberEvo", "CBE"){
         deployer = msg.sender;
         ipfsHash = _ipfsHash;
+        
     }
 
     function mint() public payable returns(uint) {

@@ -5,9 +5,16 @@ require("dotenv").config()
 module.exports = {
   solidity: "0.8.18",
   networks:{
-    arbitrum:{
+    arbitrum_testnet:{
       url: process.env.ARB_TESTNET_URL,
       accounts: [process.env.TESTNET_DEPLOYER_PRIVATE]
+    },
+    arbitrum_main:{
+      url: process.env.ARB_MAINNET,
+      accounts: [process.env.MAINNET_DEPLOYER_PRIVATE]
     }
-  }
+  },
+  etherscan: {
+    apiKey: process.env.ARBISCAN_API
+}
 };
