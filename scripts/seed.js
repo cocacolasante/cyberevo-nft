@@ -12,6 +12,7 @@ async function main() {
     await setMintFee.wait()
 
     let tx = await CyberEvo.connect(signer).mint({value: 1})
+    
     let res = await tx.wait()
     if(res.status == 1){
         console.log("success")
