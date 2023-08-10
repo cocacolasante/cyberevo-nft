@@ -12,6 +12,14 @@ module.exports = {
     arbitrum_main:{
       url: process.env.ARB_MAINNET,
       accounts: [process.env.MAINNET_DEPLOYER_PRIVATE]
+    },
+    mumbai:{
+      url: process.env.MUMBAI_TESTNET,
+      accounts: [process.env.MUMBAI_DEPLOYER]
+    },
+    polygon:{
+      url: process.env.POLYGON_MAINNET,
+      accounts: [process.env.MAINNET_DEPLOYER_PRIVATE]
     }
   },
   etherscan: {
